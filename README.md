@@ -322,6 +322,16 @@ limit 10;
 ```
 ![dataflow](./resources/acc_trusted.png)
 
+**- Step Trainer: 941 **
+
+```
+SELECT count(1) 
+FROM "my_stedi_project"."step_trainer_trusted"
+limit 10;
+```
+
+![step_trusted.png](./resources/step_trusted.png)
+
 ### Curated
 - Customer: 482
 
