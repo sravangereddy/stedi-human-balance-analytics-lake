@@ -61,8 +61,8 @@ transform_step_trainer_trusted_node1717847596198 = sparkSqlQuery(glueContext, qu
 
 # Script generated for node Amazon S3
 AmazonS3_node1719672102228 = glueContext.write_dynamic_frame.from_options(
-    frame=transform_step_trainer_trusted_node1717847596198, connection_type="s3", format="glueparquet",
-    connection_options={"path": "s3://my-second-bucket-sgereddy-learnings/step_trainer/trusted/", "partitionKeys": []},
-    format_options={"compression": "snappy"}, transformation_ctx="AmazonS3_node1719672102228")
+    frame=transform_step_trainer_trusted_node1717847596198, connection_type="s3", format="json",
+    connection_options={"path": "s3://my-second-bucket-sgereddy-learnings/step_trainer/trusted/",
+                        "compression": "snappy", "partitionKeys": []}, transformation_ctx="AmazonS3_node1719672102228")
 
 job.commit()
