@@ -322,7 +322,7 @@ limit 10;
 ```
 ![dataflow](./resources/acc_trusted.png)
 
-**- Step Trainer: 941 **
+**- Step Trainer: 14460 **
 
 ```
 SELECT count(1) 
